@@ -58,7 +58,7 @@ h3{
 header ul, header h1{
     width: 100%;
     height: 45px;
-    background-color: rgb(44, 140, 223);
+    background-image: linear-gradient(to left, rgb(7, 0, 98) ,rgb(82, 93, 166));
     border-radius: 10px ;
     padding: 10px;
     margin: 2px ;
@@ -68,7 +68,9 @@ header ul, header h1{
     color: white;
     box-sizing:border-box;
     align-items: center;
-    
+    animation-name: movi;
+    animation-duration: 1s;
+    animation-iteration-count: start;   
 }
 
 ul{
@@ -135,4 +137,15 @@ ul li{
 .tarjeta{
     padding: 4px;
     margin: 10px;  
+}
+@keyframes movi{
+    0%{
+      transform: translate(0px , 0px);
+    }
+    50%{
+        transform: translate(0px ,-10px);
+    }
+    100%{
+        transform: translate(0px , 0px );
+    }
 }
